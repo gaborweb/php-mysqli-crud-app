@@ -1,0 +1,47 @@
+<form action="index.php" method="post">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="text" name="email"></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="gender" value="male" checked><span>Male</span>
+                <input type="radio" name="gender" value="female"><span>Female</span>
+            </td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>
+                <textarea name="address"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>Hobbies</td>
+            <td>
+                <input type="checkbox" name="hobby[]" value="music"><span>Music</span>      <!--  hobby[] --- TÖMB  -->
+                <input type="checkbox" name="hobby[]" value="movies"><span>Movies</span>
+                <input type="checkbox" name="hobby[]" value="games"><span>Games</span>
+                <input type="checkbox" name="hobby[]" value="travel"><span>Travel</span>
+            </td>
+            
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td>
+                <select name="country">
+                    <option value="Hungary">Hungary</option>
+                    <option value="Germany">Germany</option>
+                    <option value="England">England</option>
+                    <option value="Australia">Australia</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" name="btninsert" value="Insert">
+</form>
